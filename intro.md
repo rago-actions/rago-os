@@ -32,18 +32,19 @@ call return any value in count other than nbytes? If so, why?
 23. A file whose file descriptor is fd contains the following sequence of bytes: 3, 1, 4, 1, 5,
 9, 2, 6, 5, 3, 5. The following system calls are made:
 lseek(fd, 3, SEEK SET); read(fd, &buffer, 4);
-
 where the lseek call makes a seek to byte 3 of the file. What does buffer contain afterthe read has completed?
+
 24. Suppose that a 10-MB file is stored on a disk on the same track (track 50) in consecu- tive sectors. The disk arm is currently situated over track number 100. How long will it take to retrieve this file from the disk? Assume that it takes about 1 ms to move the arm from one cylinder to the next and about 5 ms for the sector where the beginning of the file is stored to rotate under the head. Also, assume that reading occurs at a rate of 200 MB/s.
-25. What is the essential difference between a block special file and a character special file?
-26. In the example given in Fig. 1-17, the library procedure is called read and the system call itself is called read. Is it essential that both of these have the same name? If not, which one is more important?
-27. Modern operating systems decouple a process address space from the machine’s physi- cal memory. List two advantages of this design.
-28. To a programmer, a system call looks like any other call to a library procedure. Is it important that a programmer know which library procedures result in system calls? Under what circumstances and why?
-29. Figure 1-23 shows that a number of UNIX system calls have no Win32 API equiv- alents. For each of the calls listed as having no Win32 equivalent, what are the conse- quences for a programmer of converting a UNIX program to run under Windows?
-30. A portable operating system is one that can be ported from one system architecture to another without any modification. Explain why it is infeasible to build an operating system that is completely portable. Describe two high-level layers that you will have in designing an operating system that is highly portable.
-31. Explain how separation of policy and mechanism aids in building microkernel-based operating systems.
-32. Virtual machines have become very popular for a variety of reasons. Nevertheless, they have some downsides. Name one.
-33. Here are some questions for practicing unit conversions:
+
+26. What is the essential difference between a block special file and a character special file?
+27. In the example given in Fig. 1-17, the library procedure is called read and the system call itself is called read. Is it essential that both of these have the same name? If not, which one is more important?
+28. Modern operating systems decouple a process address space from the machine’s physi- cal memory. List two advantages of this design.
+29. To a programmer, a system call looks like any other call to a library procedure. Is it important that a programmer know which library procedures result in system calls? Under what circumstances and why?
+30. Figure 1-23 shows that a number of UNIX system calls have no Win32 API equiv- alents. For each of the calls listed as having no Win32 equivalent, what are the conse- quences for a programmer of converting a UNIX program to run under Windows?
+31. A portable operating system is one that can be ported from one system architecture to another without any modification. Explain why it is infeasible to build an operating system that is completely portable. Describe two high-level layers that you will have in designing an operating system that is highly portable.
+32. Explain how separation of policy and mechanism aids in building microkernel-based operating systems.
+33. Virtual machines have become very popular for a variety of reasons. Nevertheless, they have some downsides. Name one.
+34. Here are some questions for practicing unit conversions:
 (a) How long is a nanoyear in seconds?
 (b) Micrometers are often called microns. How long is a megamicron? (c) How many bytes are there in a 1-PB memory?
 (d) The mass of the earth is 6000 yottagrams. What is that in kilograms?
